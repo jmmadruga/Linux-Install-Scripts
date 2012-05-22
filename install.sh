@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Virar root antes de tudo :)
+sudo su
+
 # Atualiza os repositórios
 apt-get update
 
