@@ -44,3 +44,9 @@ apt-get install hplip-cups -y
 
 # Aplicativos a remover
 apt-get purge gwibber* empathy* thunderbird* -y
+
+# Atualização do sistema para finalizar
+apt-get dist-upgrade -y
+
+# Limpeza do cache
+apt-get clean && apt-get autoclean
