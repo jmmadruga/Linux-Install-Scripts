@@ -3,6 +3,9 @@
 # Virar root antes de tudo :)
 sudo su
 
+# Ativar o Unity 2d como padrão
+sed -i 's/user-session=ubuntu/user-session=ubuntu-2d/g' /etc/lightdm/lightdm.conf
+
 # Atualiza os repositórios
 apt-get update
 
