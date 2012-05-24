@@ -3,6 +3,9 @@
 # Virar root antes de tudo :)
 sudo su
 
+# Aplicativos a remover
+apt-get purge gwibber* empathy* thunderbird* totem* rhythmbox* software-center* -y
+
 # Ativar o Unity 2d como padrão
 sed -i 's/user-session=ubuntu/user-session=ubuntu-2d/g' /etc/lightdm/lightdm.conf
 
@@ -25,7 +28,7 @@ apt-get install build-essential geany spe kompozer quickly anjuta anjuta-extras 
 apt-get install homebank openclipart libreoffice libreoffice-l10n-pt-br lo-menubar workrave pyroom qalculate tesseract-ocr tesseract-ocr-por ocrfeeder gscan2pdf gnucash calibre lyx impressive zim -y
 
 # Multimidia
-apt-get install audacious vlc non-free-codecs libdvdcss2 ffmpeg mencoder arista frei0r-plugins devede winff audacity brasero-cdrkit openshot gaupol dvdrip sound-juicer gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ffmpeg easytag furiusisomount cheese bombono-dvd -y
+apt-get install audacious vlc non-free-codecs libdvdcss2 ffmpeg mencoder arista frei0r-plugins devede winff audacity brasero-cdrkit openshot gaupol dvdrip sound-juicer easytag furiusisomount cheese bombono-dvd -y
 
 # Efeitos do Audacity
 apt-get install vco-plugins tap-plugins swh-plugins rev-plugins omins mcp-plugins ladspa-sdk csladspa cmt caps blop blepvco amb-plugins -y
@@ -47,9 +50,6 @@ apt-get install chromium-browser chromium-browser-l10n lynx midori pidgin msn-pe
 
 # CUPS
 apt-get install hplip-cups -y
-
-# Aplicativos a remover
-apt-get purge gwibber* empathy* thunderbird* -y
 
 # Atualização do sistema para finalizar
 apt-get dist-upgrade -y
