@@ -4,7 +4,7 @@
 sudo su
 
 # Aplicativos a remover
-apt-get purge gwibber* empathy* thunderbird* totem* rhythmbox* software-center* telepathy* -y
+# apt-get purge gwibber* empathy* thunderbird* totem* rhythmbox* software-center* telepathy* -y
 
 # Ativar o Unity 2d como padrão
 sed -i 's/user-session=ubuntu/user-session=ubuntu-2d/g' /etc/lightdm/lightdm.conf
