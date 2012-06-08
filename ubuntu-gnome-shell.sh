@@ -45,7 +45,7 @@ apt-get install gimp gimp-gmic inkscape python-uniconvertor scribus blender shut
 apt-get install arj lha p7zip p7zip-full p7zip-rar rar unrar unace-nonfree unp -y
 
 # Installing system & network tools
-apt-get install samba smbclient grdesktop screen htop filezilla ntfs-3g unetbootin unetbootin-translations ppa-purge gdebi keepassx bleachbit nautilus-open-terminal remmina dconf-tools gconf-editor hplip-cups python-gpgme -y
+apt-get install samba smbclient grdesktop screen htop filezilla ntfs-3g unetbootin unetbootin-translations ppa-purge gdebi keepassx bleachbit nautilus-open-terminal remmina dconf-tools gconf-editor hplip-cups python-gpgme testdisk -y
 
 # Installing internet tools
 apt-get install chromium-browser chromium-browser-l10n lynx midori msn-pecan xchat pidgin flashplugin-installer -y
