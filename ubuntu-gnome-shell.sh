@@ -10,6 +10,9 @@
 # Becoming root due to the use apt
 sudo su
 
+# Deactivate the gnome updater
+sed -i 's/X-GNOME-Autostart-Delay=60/X-GNOME-Autostart-enabled=false/' /etc/xdg/autostart/update-notifier.desktop
+
 # Add the Gnome 3 Team PPA
 add-apt-repository ppa:gnome3-team/gnome3 -y
 
